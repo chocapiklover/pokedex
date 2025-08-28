@@ -7,6 +7,7 @@ yarn-error.log*
 # Logs
 *.log
 repl.log
+repl.test.ts
 
 # Output directories
 dist/
