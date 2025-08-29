@@ -3,13 +3,13 @@ import { Cache } from "./src/pokecache.js";
 
 test.concurrent.each([
   {
-    key: "https://example.com",
+    key: "https://examples.com",
     val: "testdata",
     interval: 500, // 1/2 second
   },
   {
-    key: "https://example.com/path",
-    val: "moretestdata",
+    key: "https://examples.com",
+    val: 1234,
     interval: 1000, // 1 second
   },
 ])("Test Caching $interval ms", async ({ key, val, interval }) => {

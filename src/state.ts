@@ -18,6 +18,8 @@ export type CLICommand = {
   callback: (state: State) => Promise<void>;
 };
 
+
+
 export function initState(): State {
     const rl = createInterface({
     input: stdin,

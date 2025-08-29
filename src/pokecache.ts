@@ -20,7 +20,7 @@ export class Cache {
     }
     this.#cache.set(key, newEntry)
   }
-
+  
   get<T>(key: string) : T | undefined {
     const entry = this.#cache.get(key)
     if (!entry) {
